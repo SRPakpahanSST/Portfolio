@@ -1,8 +1,6 @@
 # Portfolio
-
 ---
 
-```markdown
 # Portfolio Website - SR Pakpahan, SST
 
 ![Status Proyek](https://img.shields.io/badge/Status-Aktif-brightgreen)
