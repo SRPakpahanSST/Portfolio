@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
 
-    <!-- Font Awesome 6 (gratis) -->
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
     <style>
@@ -51,9 +51,6 @@
             --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.5);
         }
 
-        /* ====================================================
-                   RESET & BASE
-                   ==================================================== */
         *,
         *::before,
         *::after {
@@ -75,19 +72,9 @@
             overflow-x: hidden;
         }
 
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        ul {
-            list-style: none;
-        }
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; display: block; }
+        ul { list-style: none; }
 
         .container {
             max-width: var(--max-width);
@@ -95,9 +82,7 @@
             padding: 0 24px;
         }
 
-        section {
-            padding: 80px 0;
-        }
+        section { padding: 80px 0; }
 
         .section-label {
             font-size: 0.75rem;
@@ -121,17 +106,10 @@
             max-width: 560px;
         }
 
-        .text-center {
-            text-align: center;
-        }
-        .mx-auto {
-            margin-left: auto;
-            margin-right: auto;
-        }
+        .text-center { text-align: center; }
+        .mx-auto { margin-left: auto; margin-right: auto; }
 
-        /* ====================================================
-                   BUTTONS
-                   ==================================================== */
+        /* BUTTONS */
         .btn {
             display: inline-flex;
             align-items: center;
@@ -168,9 +146,7 @@
             transform: translateY(-2px);
         }
 
-        /* ====================================================
-                   HEADER / NAV
-                   ==================================================== */
+        /* NAVBAR */
         .navbar {
             position: fixed;
             top: 0;
@@ -204,9 +180,7 @@
             letter-spacing: -0.5px;
             color: var(--color-text);
         }
-        .logo span {
-            color: var(--color-primary);
-        }
+        .logo span { color: var(--color-primary); }
 
         .nav-links {
             display: flex;
@@ -230,12 +204,8 @@
             background: var(--color-primary);
             transition: var(--transition);
         }
-        .nav-links a:hover {
-            color: var(--color-text);
-        }
-        .nav-links a:hover::after {
-            width: 100%;
-        }
+        .nav-links a:hover { color: var(--color-text); }
+        .nav-links a:hover::after { width: 100%; }
 
         .nav-actions {
             display: flex;
@@ -257,9 +227,7 @@
             align-items: center;
             justify-content: center;
         }
-        .theme-toggle:hover {
-            background: var(--color-border);
-        }
+        .theme-toggle:hover { background: var(--color-border); }
 
         .hamburger {
             display: none;
@@ -278,9 +246,7 @@
             transition: var(--transition);
         }
 
-        /* ====================================================
-                   HERO
-                   ==================================================== */
+        /* HERO */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -404,11 +370,7 @@
             border: 2px dashed var(--color-border);
             animation: spin 20s linear infinite;
         }
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
-        }
+        @keyframes spin { to { transform: rotate(360deg); } }
 
         .floating-badge {
             position: absolute;
@@ -423,9 +385,7 @@
             gap: 8px;
             animation: float 4s ease-in-out infinite;
         }
-        .floating-badge i {
-            color: var(--color-accent);
-        }
+        .floating-badge i { color: var(--color-accent); }
         .floating-badge:nth-child(2) {
             bottom: 10%;
             left: -10%;
@@ -438,18 +398,11 @@
         }
 
         @keyframes float {
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
         }
 
-        /* ====================================================
-                   ABOUT
-                   ==================================================== */
+        /* ABOUT */
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -472,9 +425,7 @@
             margin-bottom: 24px;
             font-size: 1.05rem;
         }
-        .about-content .about-text strong {
-            color: var(--color-text);
-        }
+        .about-content .about-text strong { color: var(--color-text); }
 
         .about-stats {
             display: grid;
@@ -504,13 +455,8 @@
             margin-top: 2px;
         }
 
-        /* ====================================================
-                   SKILLS
-                   ==================================================== */
-        .skills {
-            background: var(--color-bg-alt);
-        }
-
+        /* SKILLS */
+        .skills { background: var(--color-bg-alt); }
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -538,9 +484,7 @@
             align-items: center;
             gap: 10px;
         }
-        .skill-category h3 i {
-            color: var(--color-primary);
-        }
+        .skill-category h3 i { color: var(--color-primary); }
         .skill-tags {
             display: flex;
             flex-wrap: wrap;
@@ -561,9 +505,7 @@
             transform: scale(1.05);
         }
 
-        /* ====================================================
-                   CERTIFICATES (NEW SECTION)
-                   ==================================================== */
+        /* CERTIFICATES */
         .certificates-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -591,9 +533,7 @@
             object-fit: cover;
         }
 
-        /* ====================================================
-                   PROJECTS
-                   ==================================================== */
+        /* PROJECTS */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -639,9 +579,7 @@
             opacity: 0;
             transition: var(--transition);
         }
-        .project-card:hover .thumb .overlay {
-            opacity: 1;
-        }
+        .project-card:hover .thumb .overlay { opacity: 1; }
         .project-card .thumb .overlay a {
             background: var(--color-card);
             padding: 10px 18px;
@@ -700,13 +638,8 @@
             margin-top: 2px;
         }
 
-        /* ====================================================
-                   TESTIMONIALS
-                   ==================================================== */
-        .testimonials {
-            background: var(--color-bg-alt);
-        }
-
+        /* TESTIMONIALS */
+        .testimonials { background: var(--color-bg-alt); }
         .testimonials-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -763,9 +696,7 @@
             color: var(--color-text-muted);
         }
 
-        /* ====================================================
-                   CONTACT
-                   ==================================================== */
+        /* CONTACT */
         .contact-wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -808,9 +739,7 @@
             letter-spacing: 0.05em;
             color: var(--color-text-muted);
         }
-        .contact-item .detail .value {
-            font-weight: 500;
-        }
+        .contact-item .detail .value { font-weight: 500; }
 
         .contact-form {
             background: var(--color-card);
@@ -819,9 +748,7 @@
             border: 1px solid var(--color-border);
             box-shadow: var(--shadow-sm);
         }
-        .contact-form .form-group {
-            margin-bottom: 20px;
-        }
+        .contact-form .form-group { margin-bottom: 20px; }
         .contact-form label {
             display: block;
             font-weight: 600;
@@ -855,9 +782,7 @@
             justify-content: center;
         }
 
-        /* ====================================================
-                   FOOTER
-                   ==================================================== */
+        /* FOOTER */
         .footer {
             border-top: 1px solid var(--color-border);
             padding: 32px 0;
@@ -876,13 +801,9 @@
             transition: var(--transition);
             font-size: 1.2rem;
         }
-        .footer .social a:hover {
-            color: var(--color-primary);
-        }
+        .footer .social a:hover { color: var(--color-primary); }
 
-        /* ====================================================
-                   SCROLL ANIMATIONS (Intersection Observer)
-                   ==================================================== */
+        /* ANIMATIONS */
         .reveal {
             opacity: 0;
             transform: translateY(40px);
@@ -893,9 +814,7 @@
             transform: translateY(0);
         }
 
-        /* ====================================================
-                   RESPONSIVE
-                   ==================================================== */
+        /* RESPONSIVE */
         @media (max-width: 992px) {
             .hero .container {
                 grid-template-columns: 1fr;
@@ -905,30 +824,17 @@
                 margin-left: auto;
                 margin-right: auto;
             }
-            .hero-buttons {
-                justify-content: center;
-            }
-            .hero-social {
-                justify-content: center;
-            }
-            .hero-image .avatar-wrapper {
-                max-width: 300px;
-            }
-            .floating-badge {
-                display: none;
-            }
+            .hero-buttons { justify-content: center; }
+            .hero-social { justify-content: center; }
+            .hero-image .avatar-wrapper { max-width: 300px; }
+            .floating-badge { display: none; }
 
             .about-grid {
                 grid-template-columns: 1fr;
                 text-align: center;
             }
-            .about-stats {
-                justify-items: center;
-            }
-
-            .contact-wrapper {
-                grid-template-columns: 1fr;
-            }
+            .about-stats { justify-items: center; }
+            .contact-wrapper { grid-template-columns: 1fr; }
         }
 
         @media (max-width: 768px) {
@@ -947,83 +853,45 @@
                 z-index: 999;
                 padding: 40px;
             }
-            .nav-links.open {
-                transform: translateX(0);
-            }
-            .nav-links a {
-                font-size: 1.2rem;
-            }
-            .hamburger {
-                display: flex;
-            }
-            .hamburger.open span:nth-child(1) {
-                transform: rotate(45deg) translate(5px, 5px);
-            }
-            .hamburger.open span:nth-child(2) {
-                opacity: 0;
-            }
-            .hamburger.open span:nth-child(3) {
-                transform: rotate(-45deg) translate(5px, -5px);
-            }
+            .nav-links.open { transform: translateX(0); }
+            .nav-links a { font-size: 1.2rem; }
+            .hamburger { display: flex; }
+            .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+            .hamburger.open span:nth-child(2) { opacity: 0; }
+            .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
             .hero {
                 padding-top: 100px;
                 min-height: auto;
                 padding-bottom: 60px;
             }
-            section {
-                padding: 60px 0;
-            }
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-            .certificates-grid {
-                grid-template-columns: 1fr; /* 1 kolom di mobile */
-            }
+            section { padding: 60px 0; }
+            .projects-grid { grid-template-columns: 1fr; }
+            .certificates-grid { grid-template-columns: 1fr; } /* 1 kolom di mobile */
             .about-stats {
                 grid-template-columns: repeat(3, 1fr);
                 gap: 10px;
             }
-            .about-stats .stat {
-                padding: 14px 10px;
-            }
-            .about-stats .stat .number {
-                font-size: 1.4rem;
-            }
-            .contact-form {
-                padding: 20px;
-            }
+            .about-stats .stat { padding: 14px 10px; }
+            .about-stats .stat .number { font-size: 1.4rem; }
+            .contact-form { padding: 20px; }
         }
 
         @media (max-width: 480px) {
-            .hero-content h1 {
-                font-size: 2.2rem;
-            }
-            .hero-buttons .btn {
-                width: 100%;
-                justify-content: center;
-            }
-            .about-stats {
-                grid-template-columns: 1fr 1fr;
-            }
-            .about-stats .stat:last-child {
-                grid-column: 1 / -1;
-            }
-            .section-title {
-                font-size: 1.8rem;
-            }
+            .hero-content h1 { font-size: 2.2rem; }
+            .hero-buttons .btn { width: 100%; justify-content: center; }
+            .about-stats { grid-template-columns: 1fr 1fr; }
+            .about-stats .stat:last-child { grid-column: 1 / -1; }
+            .section-title { font-size: 1.8rem; }
         }
     </style>
 </head>
 <body>
 
-    <!-- ====================================================
-    NAVBAR
-    ==================================================== -->
+    <!-- NAVBAR -->
     <header class="navbar" id="navbar" role="navigation">
         <div class="container">
             <a href="#" class="logo">SR.<span>Pakpahan</span></a>
-
             <ul class="nav-links" id="navLinks">
                 <li><a href="#about">Tentang</a></li>
                 <li><a href="#skills">Keahlian</a></li>
@@ -1032,7 +900,6 @@
                 <li><a href="#testimonials">Testimoni</a></li>
                 <li><a href="#contact">Kontak</a></li>
             </ul>
-
             <div class="nav-actions">
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                     <i class="fas fa-moon"></i>
@@ -1044,29 +911,16 @@
         </div>
     </header>
 
-    <!-- ====================================================
-    HERO
-    ==================================================== -->
+    <!-- HERO -->
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <div class="badge">
-                    <i class="fas fa-code"></i> Tersedia untuk kolaborasi
-                </div>
-                <h1>
-                    Halo, saya<br>
-                    <span class="highlight">SR Pakpahan, SST</span>
-                </h1>
-                <p class="tagline">
-                    Dengan Teknologi PMD (Pedang Mata Dua), Membangun UI/UX web/desktop yang cepat, responsif, dan ramah pengguna.
-                </p>
+                <div class="badge"><i class="fas fa-code"></i> Tersedia untuk kolaborasi</div>
+                <h1>Halo, saya<br><span class="highlight">SR Pakpahan, SST</span></h1>
+                <p class="tagline">Dengan Teknologi PMD (Pedang Mata Dua), Membangun UI/UX web/desktop yang cepat, responsif, dan ramah pengguna.</p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="fas fa-rocket"></i> Lihat Karya
-                    </a>
-                    <a href="#contact" class="btn btn-outline">
-                        <i class="fas fa-paper-plane"></i> Hubungi Saya
-                    </a>
+                    <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> Lihat Karya</a>
+                    <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Hubungi Saya</a>
                 </div>
                 <div class="hero-social">
                     <a href="https://github.com/SRPakpahanSST" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -1078,420 +932,218 @@
 
             <div class="hero-image">
                 <div class="avatar-wrapper">
-                    <!-- Ganti link src di bawah dengan link foto Anda -->
-                    <img class="avatar" src="https://1024terabox.com/s/13MDtw4D0fz9eSGJiUFG0rQ" alt="Foto SR Pakpahan">
-                    
+                    <!-- Ganti dengan path foto Anda yang benar -->
+                    <img class="avatar" src="assets/images/profile.jpg" alt="Foto SR Pakpahan">
                     <div class="ring"></div>
-                    <div class="floating-badge" style="bottom:10%;left:-8%;">
-                        <i class="fas fa-database"></i> Data Science
-                    </div>
-                    <div class="floating-badge" style="top:8%;right:-8%;">
-                        <i class="fas fa-laptop-code"></i> React Dev
-                    </div>
+                    <div class="floating-badge" style="bottom:10%;left:-8%;"><i class="fas fa-database"></i> Data Science</div>
+                    <div class="floating-badge" style="top:8%;right:-8%;"><i class="fas fa-laptop-code"></i> React Dev</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ====================================================
-    ABOUT
-    ==================================================== -->
+    <!-- ABOUT -->
     <section id="about">
         <div class="container">
             <div class="about-grid">
                 <div class="about-image reveal">
-                    <img src="https://1024terabox.com/s/13MDtw4D0fz9eSGJiUFG0rQ" alt="Foto Profil">
+                    <img src="assets/images/profile.jpg" alt="Foto Profil">
                 </div>
                 <div class="about-content reveal">
                     <span class="section-label">Tentang Saya</span>
                     <h2 class="section-title">Frontend/Backend Dev & <br><span style="color:var(--color-primary)">Data Scientist</span></h2>
-                    <p class="about-text">
-                        Saya <strong>SR Pakpahan, SST</strong>, seorang profesional di bidang teknologi informasi dengan latar belakang kuat sebagai lulusan Sekolah Tinggi Ilmu Statistik (STIS) Jakarta, jurusan Statistika Ekonomi. Berbekal pengalaman lebih dari 19 tahun sebagai PNS di Badan Pusat Statistik (BPS), saya mengembangkan ketelitian analitis yang kuat dalam pengolahan data dan manajemen proyek.
-                    </p>
-                    <p class="about-text">
-                        Kini saya berfokus pada pengembangan aplikasi web dan desktop modern menggunakan <strong>React</strong>, serta pemanfaatan <strong>Data Science</strong>. Dengan perpaduan kemampuan statistik, analisis data, dan rekayasa perangkat lunak, saya selalu berusaha memberikan solusi terbaik yang efisien, akurat, dan dapat diandalkan.
-                    </p>
+                    <p class="about-text">Saya <strong>SR Pakpahan, SST</strong>, seorang profesional di bidang teknologi informasi dengan latar belakang kuat sebagai lulusan Sekolah Tinggi Ilmu Statistik (STIS) Jakarta, jurusan Statistika Ekonomi. Berbekal pengalaman lebih dari 19 tahun sebagai PNS di Badan Pusat Statistik (BPS), saya mengembangkan ketelitian analitis yang kuat dalam pengolahan data dan manajemen proyek.</p>
+                    <p class="about-text">Kini saya berfokus pada pengembangan aplikasi web dan desktop modern menggunakan <strong>React</strong>, serta pemanfaatan <strong>Data Science</strong>. Dengan perpaduan kemampuan statistik, analisis data, dan rekayasa perangkat lunak, saya selalu berusaha memberikan solusi terbaik yang efisien, akurat, dan dapat diandalkan.</p>
                     <div class="about-stats">
-                        <div class="stat">
-                            <div class="number">19+</div>
-                            <div class="label">Tahun Pengalaman</div>
-                        </div>
-                        <div class="stat">
-                            <div class="number">10+</div>
-                            <div class="label">Proyek & Riset</div>
-                        </div>
-                        <div class="stat">
-                            <div class="number">2nd</div>
-                            <div class="label">Juara Cipta Lagu</div>
-                        </div>
+                        <div class="stat"><div class="number">19+</div><div class="label">Tahun Pengalaman</div></div>
+                        <div class="stat"><div class="number">10+</div><div class="label">Proyek & Riset</div></div>
+                        <div class="stat"><div class="number">2nd</div><div class="label">Juara Cipta Lagu</div></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ====================================================
-    SKILLS
-    ==================================================== -->
+    <!-- SKILLS -->
     <section id="skills" class="skills">
         <div class="container">
             <div class="text-center reveal">
                 <span class="section-label">Keahlian</span>
                 <h2 class="section-title">Tech Stack &amp; Kemampuan</h2>
-                <p class="section-subtitle mx-auto">
-                    Teknologi dan tools yang saya kuasai untuk membangun aplikasi modern dan menganalisis data.
-                </p>
+                <p class="section-subtitle mx-auto">Teknologi dan tools yang saya kuasai untuk membangun aplikasi modern dan menganalisis data.</p>
             </div>
-
             <div class="skills-grid">
-                <!-- Hard Skills -->
                 <div class="skill-category reveal">
                     <h3><i class="fas fa-laptop-code"></i> Developer</h3>
                     <div class="skill-tags">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript (ES6+)</span>
-                        <span>React</span>
-                        <span>Backend Dev</span>
-                        <span>UI/UX Design</span>
-                        <span>Mobile Apps (MIT-AI)</span>
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript (ES6+)</span><span>React</span><span>Backend Dev</span><span>UI/UX Design</span><span>Mobile Apps (MIT-AI)</span>
                     </div>
                 </div>
-
-                <!-- Data & Analytics -->
                 <div class="skill-category reveal">
                     <h3><i class="fas fa-chart-line"></i> Data Science</h3>
                     <div class="skill-tags">
-                        <span>Analisis Data Statistik</span>
-                        <span>Ekonometrika</span>
-                        <span>Neraca Wilayah</span>
-                        <span>Manajemen Data</span>
-                        <span>Excel & MS Office</span>
-                        <span>SPSS / STATA</span>
+                        <span>Analisis Data Statistik</span><span>Ekonometrika</span><span>Neraca Wilayah</span><span>Manajemen Data</span><span>Excel & MS Office</span><span>SPSS / STATA</span>
                     </div>
                 </div>
-
-                <!-- Creative & Project -->
                 <div class="skill-category reveal">
                     <h3><i class="fas fa-tools"></i> Soft Skills & Kreatif</h3>
                     <div class="skill-tags">
-                        <span>Project Management</span>
-                        <span>Komunikasi</span>
-                        <span>Komposer Musik</span>
-                        <span>Mastering Audio</span>
-                        <span>Penulis Artikel</span>
-                        <span>Problem Solving</span>
+                        <span>Project Management</span><span>Komunikasi</span><span>Komposer Musik</span><span>Mastering Audio</span><span>Penulis Artikel</span><span>Problem Solving</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ====================================================
-    CERTIFICATES (Bagian Baru)
-    ==================================================== -->
+    <!-- CERTIFICATES -->
     <section id="certificates">
         <div class="container">
             <div class="text-center reveal">
                 <span class="section-label">Pengakuan Resmi</span>
                 <h2 class="section-title">Sertifikat &amp; Penghargaan</h2>
-                <p class="section-subtitle mx-auto">
-                    Kumpulan dokumen sertifikasi yang menegaskan kompetensi dan dedikasi saya di bidang statistik, teknologi, dan kreativitas.
-                </p>
+                <p class="section-subtitle mx-auto">Kumpulan dokumen sertifikasi yang menegaskan kompetensi dan dedikasi saya di bidang statistik, teknologi, dan kreativitas.</p>
             </div>
-
             <div class="certificates-grid">
-                <!-- Tambahkan gambar sertifikat Anda di sini. Ganti src dengan link gambar -->
+                <!-- Tambahkan file sertifikat Anda di folder assets/images/certificates -->
                 <div class="certificate-item reveal">
-                    <img src="https://placehold.co/600x450/1e293b/94a3b8?text=Sertifikat+1" alt="Sertifikat 1">
+                    <img src="assets/images/certificates/certificate-1.jpg" alt="Sertifikat 1">
                 </div>
-                
                 <div class="certificate-item reveal">
-                    <img src="https://placehold.co/600x450/1e293b/94a3b8?text=Sertifikat+2" alt="Sertifikat 2">
+                    <img src="assets/images/certificates/certificate-2.jpg" alt="Sertifikat 2">
                 </div>
-
                 <div class="certificate-item reveal">
-                    <img src="https://placehold.co/600x450/1e293b/94a3b8?text=Sertifikat+3" alt="Sertifikat 3">
+                    <img src="assets/images/certificates/certificate-3.jpg" alt="Sertifikat 3">
                 </div>
-
-                <!-- Jika menambah sertifikat baru, copy div di atas dan letakkan di bawah ini -->
-                <!-- Contoh penambahan sertifikat ke-4 (memanjang ke bawah) -->
-                <!-- 
-                <div class="certificate-item reveal">
-                    <img src="link-gambar-sertifikat-4" alt="Sertifikat 4">
-                </div>
-                -->
+                <!-- Tambahkan lebih banyak blok di bawah ini jika perlu -->
             </div>
         </div>
     </section>
 
-    <!-- ====================================================
-    PROJECTS
-    ==================================================== -->
+    <!-- PROJECTS -->
     <section id="projects">
         <div class="container">
             <div class="text-center reveal">
                 <span class="section-label">Karya Pilihan</span>
                 <h2 class="section-title">Proyek Unggulan</h2>
-                <p class="section-subtitle mx-auto">
-                    Studi kasus dengan pendekatan STAR: Problem, Action, Result.
-                </p>
+                <p class="section-subtitle mx-auto">Studi kasus dengan pendekatan STAR: Problem, Action, Result.</p>
             </div>
-
             <div class="projects-grid">
-
-                <!-- Project 1 -->
                 <div class="project-card reveal">
-                    <div class="thumb">
-                        <i class="fas fa-mobile-alt fa-4x"></i>
-                        <div class="overlay">
-                            <a href="#"><i class="fas fa-eye"></i> Preview</a>
-                            <a href="#"><i class="fab fa-github"></i> Source</a>
-                        </div>
+                    <div class="thumb"><i class="fas fa-mobile-alt fa-4x"></i>
+                        <div class="overlay"><a href="#"><i class="fas fa-eye"></i> Preview</a><a href="#"><i class="fab fa-github"></i> Source</a></div>
                     </div>
                     <div class="body">
                         <h3>Ubelasy + NKHM Nusantara App</h3>
-                        <div class="tech">
-                            <span>React</span>
-                            <span>Mobile App</span>
-                            <span>PIDI Digdaya</span>
-                        </div>
-                        <div class="star-item">
-                            <div class="label"><i class="fas fa-exclamation-triangle"></i> Problem</div>
-                            <p>Kebutuhan akan platform digital yang mengintegrasikan data Nusantara dan memudahkan akses informasi bagi masyarakat luas.</p>
-                        </div>
-                        <div class="star-item">
-                            <div class="label"><i class="fas fa-bolt"></i> Action</div>
-                            <p>Mengembangkan aplikasi mobile dalam ekosistem PIDI Digdaya Hackathon 2026, dengan fokus pada pengelolaan data dan UX yang ramah pengguna.</p>
-                        </div>
-                        <div class="star-item">
-                            <div class="label"><i class="fas fa-chart-simple"></i> Result</div>
-                            <p>Aplikasi berhasil dikembangkan dan diterima dalam ekosistem hackathon (URL privat, hubungi untuk demo).</p>
-                        </div>
+                        <div class="tech"><span>React</span><span>Mobile App</span><span>PIDI Digdaya</span></div>
+                        <div class="star-item"><div class="label"><i class="fas fa-exclamation-triangle"></i> Problem</div><p>Kebutuhan akan platform digital yang mengintegrasikan data Nusantara dan memudahkan akses informasi bagi masyarakat luas.</p></div>
+                        <div class="star-item"><div class="label"><i class="fas fa-bolt"></i> Action</div><p>Mengembangkan aplikasi mobile dalam ekosistem PIDI Digdaya Hackathon 2026, dengan fokus pada pengelolaan data dan UX yang ramah pengguna.</p></div>
+                        <div class="star-item"><div class="label"><i class="fas fa-chart-simple"></i> Result</div><p>Aplikasi berhasil dikembangkan dan diterima dalam ekosistem hackathon (URL privat, hubungi untuk demo).</p></div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
                 <div class="project-card reveal">
-                    <div class="thumb">
-                        <i class="fas fa-music fa-4x"></i>
-                        <div class="overlay">
-                            <a href="#"><i class="fas fa-eye"></i> Website</a>
-                            <a href="#"><i class="fab fa-github"></i> Source</a>
-                        </div>
+                    <div class="thumb"><i class="fas fa-music fa-4x"></i>
+                        <div class="overlay"><a href="#"><i class="fas fa-eye"></i> Website</a><a href="#"><i class="fab fa-github"></i> Source</a></div>
                     </div>
                     <div class="body">
                         <h3>PMD Sesawi-AK</h3>
-                        <div class="tech">
-                            <span>Website Dev</span>
-                            <span>Blog</span>
-                            <span>Tutorial Musik</span>
-                        </div>
-                        <div class="star-item">
-                            <div class="label"><i class="fas fa-exclamation-triangle"></i> Problem</div>
-                            <p>Kurangnya wadah untuk berbagi pengetahuan tentang tutorial musik (Luni Solar) bagi komunitas pecinta musik.</p>
-                        </div>
-                        <div class="star-item">
-                            <div class="label"><i class="fas fa-bolt"></i> Action</div>
-                            <p>Membangun website dan menulis artikel tutorial musik secara konsisten di platform blog.</p>
-                        </div>
-                        <div class="star-item">
-                            <div class="label"><i class="fas fa-chart-simple"></i> Result</div>
-                            <p>Website aktif dan menjadi sumber referensi tutorial musik bagi pengunjung.</p>
-                        </div>
+                        <div class="tech"><span>Website Dev</span><span>Blog</span><span>Tutorial Musik</span></div>
+                        <div class="star-item"><div class="label"><i class="fas fa-exclamation-triangle"></i> Problem</div><p>Kurangnya wadah untuk berbagi pengetahuan tentang tutorial musik (Luni Solar) bagi komunitas pecinta musik.</p></div>
+                        <div class="star-item"><div class="label"><i class="fas fa-bolt"></i> Action</div><p>Membangun website dan menulis artikel tutorial musik secara konsisten di platform blog.</p></div>
+                        <div class="star-item"><div class="label"><i class="fas fa-chart-simple"></i> Result</div><p>Website aktif dan menjadi sumber referensi tutorial musik bagi pengunjung.</p></div>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
                 <div class="project-card reveal">
-                    <div class="thumb">
-                        <i class="fas fa-trophy fa-4x"></i>
-                        <div class="overlay">
-                            <a href="#"><i class="fas fa-eye"></i> Detail</a>
-                        </div>
+                    <div class="thumb"><i class="fas fa-trophy fa-4x"></i>
+                        <div class="overlay"><a href="#"><i class="fas fa-eye"></i> Detail</a></div>
                     </div>
                     <div class="body">
                         <h3>Karya Musik & Penghargaan</h3>
-                        <div class="tech">
-                            <span>Komposer</span>
-                            <span>Mastering Audio</span>
-                            <span>Lomba Cipta Lagu</span>
-                        </div>
-                        <div class="star-item">
-                            <div class="label"><i class="fas fa-exclamation-triangle"></i> Problem</div>
-                            <p>Mengikuti kompetisi kreatif untuk menciptakan lagu bertema Danau Toba bersama Yayasan Pencinta Danau Toba (YPDT).</p>
-                        </div>
-                        <div class="star-item">
-                            <div class="label"><i class="fas fa-bolt"></i> Action</div>
-                            <p>Menciptakan komposisi lagu yang menggambarkan keindahan Danau Toba dengan aransemen musik yang matang.</p>
-                        </div>
-                        <div class="star-item">
-                            <div class="label"><i class="fas fa-chart-simple"></i> Result</div>
-                            <p>Meraih Juara 2 Lomba Cipta Lagu Danau Toba dari penyelenggara YPDT.</p>
-                        </div>
+                        <div class="tech"><span>Komposer</span><span>Mastering Audio</span><span>Lomba Cipta Lagu</span></div>
+                        <div class="star-item"><div class="label"><i class="fas fa-exclamation-triangle"></i> Problem</div><p>Mengikuti kompetisi kreatif untuk menciptakan lagu bertema Danau Toba bersama Yayasan Pencinta Danau Toba (YPDT).</p></div>
+                        <div class="star-item"><div class="label"><i class="fas fa-bolt"></i> Action</div><p>Menciptakan komposisi lagu yang menggambarkan keindahan Danau Toba dengan aransemen musik yang matang.</p></div>
+                        <div class="star-item"><div class="label"><i class="fas fa-chart-simple"></i> Result</div><p>Meraih Juara 2 Lomba Cipta Lagu Danau Toba dari penyelenggara YPDT.</p></div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- ====================================================
-    TESTIMONIALS
-    ==================================================== -->
+    <!-- TESTIMONIALS -->
     <section id="testimonials" class="testimonials">
         <div class="container">
             <div class="text-center reveal">
                 <span class="section-label">Testimoni &amp; Penghargaan</span>
                 <h2 class="section-title">Apa Kata Mereka</h2>
-                <p class="section-subtitle mx-auto">
-                    Ulasan dari rekan kerja dan sertifikasi yang saya peroleh.
-                </p>
+                <p class="section-subtitle mx-auto">Ulasan dari rekan kerja dan sertifikasi yang saya peroleh.</p>
             </div>
-
             <div class="testimonials-grid">
-
                 <div class="testimonial-card reveal">
                     <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <blockquote>
-                        “Bekerja sama dengan Pak SR Pakpahan dalam pengembangan aplikasi di ekosistem PIDI Digdaya Hackathon merupakan pengalaman yang sangat berharga. Keahliannya dalam menganalisis data dan kemampuannya dalam mengelola proyek sangat membantu menyelesaikan pengembangan aplikasi dengan efisien dan tepat sasaran.”
-                    </blockquote>
+                    <blockquote>“Bekerja sama dengan Pak SR Pakpahan dalam pengembangan aplikasi di ekosistem PIDI Digdaya Hackathon merupakan pengalaman yang sangat berharga. Keahliannya dalam menganalisis data dan kemampuannya dalam mengelola proyek sangat membantu menyelesaikan pengembangan aplikasi dengan efisien dan tepat sasaran.”</blockquote>
                     <div class="author">
                         <div class="avatar">SM</div>
-                        <div class="info">
-                            <div class="name">Dr. Sony Sahat Tua Manalu, SE, MSi</div>
-                            <div class="role">Dosen di IPB, Rekan Tim Pengembang</div>
-                        </div>
+                        <div class="info"><div class="name">Dr. Sony Sahat Tua Manalu, SE, MSi</div><div class="role">Dosen di IPB, Rekan Tim Pengembang</div></div>
                     </div>
                 </div>
 
                 <div class="testimonial-card reveal">
                     <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <blockquote>
-                        “Kemampuan analisis statistik Pak SR sangat luar biasa. Setelah 19 tahun di BPS, ia memahami seluk-beluk pengolahan data dan mampu menerapkannya dalam pengembangan aplikasi modern.”
-                    </blockquote>
+                    <blockquote>“Kemampuan analisis statistik Pak SR sangat luar biasa. Setelah 19 tahun di BPS, ia memahami seluk-beluk pengolahan data dan mampu menerapkannya dalam pengembangan aplikasi modern.”</blockquote>
                     <div class="author">
                         <div class="avatar">BPS</div>
-                        <div class="info">
-                            <div class="name">Badan Pusat Statistik (BPS)</div>
-                            <div class="role">Instansi Pemerintah</div>
-                        </div>
+                        <div class="info"><div class="name">Badan Pusat Statistik (BPS)</div><div class="role">Instansi Pemerintah</div></div>
                     </div>
                 </div>
 
                 <div class="testimonial-card reveal">
                     <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <blockquote>
-                        “Kreativitas Pak SR tidak hanya di bidang teknologi, tetapi juga di bidang seni. Kemenangan Juara 2 Lomba Cipta Lagu menunjukkan bakat dan dedikasi yang tinggi.”
-                    </blockquote>
+                    <blockquote>“Kreativitas Pak SR tidak hanya di bidang teknologi, tetapi juga di bidang seni. Kemenangan Juara 2 Lomba Cipta Lagu menunjukkan bakat dan dedikasi yang tinggi.”</blockquote>
                     <div class="author">
                         <div class="avatar">YPDT</div>
-                        <div class="info">
-                            <div class="name">Yayasan Pencinta Danau Toba (YPDT)</div>
-                            <div class="role">Penyelenggara Lomba</div>
-                        </div>
+                        <div class="info"><div class="name">Yayasan Pencinta Danau Toba (YPDT)</div><div class="role">Penyelenggara Lomba</div></div>
                     </div>
                 </div>
-
             </div>
 
-            <!-- Penghargaan / Sertifikasi -->
             <div style="margin-top:40px;display:flex;flex-wrap:wrap;gap:20px;justify-content:center;">
-                <div style="background:var(--color-card);padding:16px 28px;border-radius:50px;border:1px solid var(--color-border);display:flex;align-items:center;gap:12px;">
-                    <i class="fas fa-certificate" style="color:var(--color-accent);font-size:1.2rem;"></i>
-                    <span style="font-weight:600;">Sarjana Sains Terapan (SST) - STIS</span>
-                </div>
-                <div style="background:var(--color-card);padding:16px 28px;border-radius:50px;border:1px solid var(--color-border);display:flex;align-items:center;gap:12px;">
-                    <i class="fas fa-award" style="color:var(--color-accent);font-size:1.2rem;"></i>
-                    <span style="font-weight:600;">Juara 2 Cipta Lagu Danau Toba</span>
-                </div>
-                <div style="background:var(--color-card);padding:16px 28px;border-radius:50px;border:1px solid var(--color-border);display:flex;align-items:center;gap:12px;">
-                    <i class="fas fa-medal" style="color:var(--color-accent);font-size:1.2rem;"></i>
-                    <span style="font-weight:600;">Pelatihan Petugas BPS</span>
-                </div>
+                <div style="background:var(--color-card);padding:16px 28px;border-radius:50px;border:1px solid var(--color-border);display:flex;align-items:center;gap:12px;"><i class="fas fa-certificate" style="color:var(--color-accent);font-size:1.2rem;"></i><span style="font-weight:600;">Sarjana Sains Terapan (SST) - STIS</span></div>
+                <div style="background:var(--color-card);padding:16px 28px;border-radius:50px;border:1px solid var(--color-border);display:flex;align-items:center;gap:12px;"><i class="fas fa-award" style="color:var(--color-accent);font-size:1.2rem;"></i><span style="font-weight:600;">Juara 2 Cipta Lagu Danau Toba</span></div>
+                <div style="background:var(--color-card);padding:16px 28px;border-radius:50px;border:1px solid var(--color-border);display:flex;align-items:center;gap:12px;"><i class="fas fa-medal" style="color:var(--color-accent);font-size:1.2rem;"></i><span style="font-weight:600;">Pelatihan Petugas BPS</span></div>
             </div>
         </div>
     </section>
 
-    <!-- ====================================================
-    CONTACT
-    ==================================================== -->
+    <!-- CONTACT -->
     <section id="contact">
         <div class="container">
             <div class="text-center reveal">
                 <span class="section-label">Kontak</span>
                 <h2 class="section-title">Mari Terhubung</h2>
-                <p class="section-subtitle mx-auto">
-                    Saya selalu terbuka untuk kolaborasi, proyek menarik, atau diskusi seputar teknologi dan data.
-                </p>
+                <p class="section-subtitle mx-auto">Saya selalu terbuka untuk kolaborasi, proyek menarik, atau diskusi seputar teknologi dan data.</p>
             </div>
-
             <div class="contact-wrapper">
-                <!-- Contact Info -->
                 <div class="contact-info reveal">
                     <h3>Hubungi Saya</h3>
-                    <p>
-                        Jika Anda memiliki pertanyaan, ingin berkolaborasi, atau membutuhkan bantuan untuk proyek Anda, silakan hubungi saya melalui kontak di bawah ini.
-                    </p>
-
-                    <div class="contact-item">
-                        <div class="icon"><i class="fas fa-envelope"></i></div>
-                        <div class="detail">
-                            <div class="label">Email</div>
-                            <div class="value">pakpahan.ministry@gmail.com</div>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="icon"><i class="fas fa-phone"></i></div>
-                        <div class="detail">
-                            <div class="label">Telepon / WhatsApp</div>
-                            <div class="value">+62 821 7081 4310</div>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="icon"><i class="fab fa-linkedin-in"></i></div>
-                        <div class="detail">
-                            <div class="label">LinkedIn</div>
-                            <div class="value"><a href="https://www.linkedin.com/in/srpakpahansst" target="_blank" style="color:var(--color-primary);">linkedin.com/in/srpakpahansst</a></div>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="icon"><i class="fab fa-github"></i></div>
-                        <div class="detail">
-                            <div class="label">GitHub</div>
-                            <div class="value"><a href="https://github.com/SRPakpahanSST" target="_blank" style="color:var(--color-primary);">github.com/SRPakpahanSST</a></div>
-                        </div>
-                    </div>
+                    <p>Jika Anda memiliki pertanyaan, ingin berkolaborasi, atau membutuhkan bantuan untuk proyek Anda, silakan hubungi saya melalui kontak di bawah ini.</p>
+                    <div class="contact-item"><div class="icon"><i class="fas fa-envelope"></i></div><div class="detail"><div class="label">Email</div><div class="value">pakpahan.ministry@gmail.com</div></div></div>
+                    <div class="contact-item"><div class="icon"><i class="fas fa-phone"></i></div><div class="detail"><div class="label">Telepon / WhatsApp</div><div class="value">+62 821 7081 4310</div></div></div>
+                    <div class="contact-item"><div class="icon"><i class="fab fa-linkedin-in"></i></div><div class="detail"><div class="label">LinkedIn</div><div class="value"><a href="https://www.linkedin.com/in/srpakpahansst" target="_blank" style="color:var(--color-primary);">linkedin.com/in/srpakpahansst</a></div></div></div>
+                    <div class="contact-item"><div class="icon"><i class="fab fa-github"></i></div><div class="detail"><div class="label">GitHub</div><div class="value"><a href="https://github.com/SRPakpahanSST" target="_blank" style="color:var(--color-primary);">github.com/SRPakpahanSST</a></div></div></div>
                 </div>
 
-                <!-- Contact Form -->
                 <form class="contact-form reveal" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Nama Lengkap</label>
-                        <input type="text" id="name" placeholder="Nama Anda" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Alamat Email</label>
-                        <input type="email" id="email" placeholder="email@anda.com" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Pesan</label>
-                        <textarea id="message" placeholder="Tulis pesan Anda di sini..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i> Kirim Pesan
-                    </button>
+                    <div class="form-group"><label for="name">Nama Lengkap</label><input type="text" id="name" placeholder="Nama Anda" required /></div>
+                    <div class="form-group"><label for="email">Alamat Email</label><input type="email" id="email" placeholder="email@anda.com" required /></div>
+                    <div class="form-group"><label for="message">Pesan</label><textarea id="message" placeholder="Tulis pesan Anda di sini..." required></textarea></div>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Kirim Pesan</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- ====================================================
-    FOOTER
-    ==================================================== -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="social">
@@ -1500,27 +1152,19 @@
                 <a href="https://youtube.com/@mmag_recipes" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                 <a href="https://www.instagram.com/srpakpahansst" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
-            <p>
-                &copy; 2026 <strong>SR Pakpahan, SST</strong> — Dibangun dengan <i class="fas fa-heart" style="color:var(--color-primary);"></i> dan Teknologi PMD.
-            </p>
+            <p>&copy; 2026 <strong>SR Pakpahan, SST</strong> — Dibangun dengan <i class="fas fa-heart" style="color:var(--color-primary);"></i> dan Teknologi PMD.</p>
         </div>
     </footer>
 
-    <!-- ====================================================
-    JAVASCRIPT
-    ==================================================== -->
     <script>
         (function() {
             'use strict';
-
-            // ---- DOM refs ----
             const navbar = document.getElementById('navbar');
             const hamburger = document.getElementById('hamburger');
             const navLinks = document.getElementById('navLinks');
             const themeToggle = document.getElementById('themeToggle');
             const contactForm = document.getElementById('contactForm');
 
-            // ---- Theme ----
             const savedTheme = localStorage.getItem('theme') || 'light';
             if (savedTheme === 'dark') {
                 document.documentElement.setAttribute('data-theme', 'dark');
@@ -1540,13 +1184,11 @@
                 }
             });
 
-            // ---- Mobile menu ----
             hamburger.addEventListener('click', function() {
                 this.classList.toggle('open');
                 navLinks.classList.toggle('open');
             });
 
-            // Close menu on link click (mobile)
             navLinks.querySelectorAll('a').forEach(function(link) {
                 link.addEventListener('click', function() {
                     hamburger.classList.remove('open');
@@ -1554,8 +1196,6 @@
                 });
             });
 
-            // ---- Navbar scroll shadow ----
-            let lastScroll = 0;
             window.addEventListener('scroll', function() {
                 const scrollY = window.scrollY;
                 if (scrollY > 30) {
@@ -1563,45 +1203,32 @@
                 } else {
                     navbar.classList.remove('scrolled');
                 }
-                lastScroll = scrollY;
             });
 
-            // ---- Scroll Reveal (Intersection Observer) ----
             const revealElements = document.querySelectorAll('.reveal');
-
             const revealObserver = new IntersectionObserver(function(entries) {
                 entries.forEach(function(entry) {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
                     }
                 });
-            }, {
-                threshold: 0.15,
-                rootMargin: '0px 0px -40px 0px'
-            });
+            }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
 
-            revealElements.forEach(function(el) {
-                revealObserver.observe(el);
-            });
+            revealElements.forEach(function(el) { revealObserver.observe(el); });
 
-            // ---- Contact Form ----
             contactForm.addEventListener('submit', function(e) {
                 e.preventDefault();
                 const name = document.getElementById('name').value.trim();
                 const email = document.getElementById('email').value.trim();
                 const message = document.getElementById('message').value.trim();
-
                 if (!name || !email || !message) {
                     alert('Harap isi semua kolom!');
                     return;
                 }
-
-                // Simulasi kirim
                 const btn = this.querySelector('.btn');
                 const originalText = btn.innerHTML;
                 btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Mengirim...';
                 btn.disabled = true;
-
                 setTimeout(function() {
                     alert('✅ Pesan berhasil dikirim! (Simulasi)');
                     contactForm.reset();
@@ -1609,9 +1236,7 @@
                     btn.disabled = false;
                 }, 1500);
             });
-
         })();
     </script>
-
 </body>
 </html>
