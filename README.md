@@ -13,9 +13,14 @@
 > **Tagline:** *"Dengan Teknologi PMD (Pedang Mata Dua), Membangun UI/UX web/desktop yang cepat, responsif, dan ramah pengguna."*
 
 ---
-URL Link Aplikasi:
-is live at:
-https://srpakpahansst.github.io/Portfolio/
+## 🚀 Link Aplikasi Live
+
+Portfolio saya dapat diakses secara langsung melalui tautan berikut:
+
+[🔗 Kunjungi Portfolio SR Pakpahan](https://srpakpahansst.github.io/Portfolio/)
+
+
+> **Catatan:** Jika link di atas tidak berfungsi, pastikan Anda telah mengaktifkan **GitHub Pages** pada repository `Portfolio` (Settings -> Pages -> Source: Deploy from a branch -> main).
 ---
 
 ## 📖 Deskripsi Proyek
