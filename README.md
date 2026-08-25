@@ -14,7 +14,8 @@
 
 ---
 URL Link Aplikasi:
-is live at https://srpakpahansst.github.io/Portfolio/ Last deployed by @SRPakpahanSST SRPakpahanSST August 25, 2026 15:20
+is live at:
+https://srpakpahansst.github.io/Portfolio/
 ---
 
 ## 📖 Deskripsi Proyek
