@@ -388,19 +388,15 @@
             padding: 4px;
             box-shadow: var(--shadow-lg);
         }
+        
         .hero-image .avatar-wrapper .avatar {
             width: 100%;
             height: 100%;
             border-radius: 50%;
             object-fit: cover;
-            background: var(--color-bg-alt);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 5rem;
-            color: var(--color-text-muted);
             background: var(--color-bg);
         }
+        
         .hero-image .avatar-wrapper .ring {
             position: absolute;
             inset: -12px;
@@ -563,6 +559,36 @@
             background: var(--color-primary);
             color: #fff;
             transform: scale(1.05);
+        }
+
+        /* ====================================================
+                   CERTIFICATES (NEW SECTION)
+                   ==================================================== */
+        .certificates-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .certificate-item {
+            background: var(--color-card);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            aspect-ratio: 4/3;
+        }
+        .certificate-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--color-primary);
+        }
+        .certificate-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         /* ====================================================
@@ -951,6 +977,9 @@
             .projects-grid {
                 grid-template-columns: 1fr;
             }
+            .certificates-grid {
+                grid-template-columns: 1fr; /* 1 kolom di mobile */
+            }
             .about-stats {
                 grid-template-columns: repeat(3, 1fr);
                 gap: 10px;
@@ -998,6 +1027,7 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#about">Tentang</a></li>
                 <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#certificates">Sertifikat</a></li>
                 <li><a href="#projects">Karya</a></li>
                 <li><a href="#testimonials">Testimoni</a></li>
                 <li><a href="#contact">Kontak</a></li>
@@ -1048,9 +1078,9 @@
 
             <div class="hero-image">
                 <div class="avatar-wrapper">
-                    <div class="avatar">
-                        <i class="fas fa-user-circle"></i>
-                    </div>
+                    <!-- Ganti link src di bawah dengan link foto Anda -->
+                    <img class="avatar" src="https://1024terabox.com/s/13MDtw4D0fz9eSGJiUFG0rQ" alt="Foto SR Pakpahan">
+                    
                     <div class="ring"></div>
                     <div class="floating-badge" style="bottom:10%;left:-8%;">
                         <i class="fas fa-database"></i> Data Science
@@ -1070,7 +1100,7 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-image reveal">
-                    <img src="https://placehold.co/600x450/1e293b/94a3b8?text=Profil+SR+Pakpahan" alt="Foto Profil">
+                    <img src="https://1024terabox.com/s/13MDtw4D0fz9eSGJiUFG0rQ" alt="Foto Profil">
                 </div>
                 <div class="about-content reveal">
                     <span class="section-label">Tentang Saya</span>
@@ -1153,6 +1183,44 @@
                         <span>Problem Solving</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================================
+    CERTIFICATES (Bagian Baru)
+    ==================================================== -->
+    <section id="certificates">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-label">Pengakuan Resmi</span>
+                <h2 class="section-title">Sertifikat &amp; Penghargaan</h2>
+                <p class="section-subtitle mx-auto">
+                    Kumpulan dokumen sertifikasi yang menegaskan kompetensi dan dedikasi saya di bidang statistik, teknologi, dan kreativitas.
+                </p>
+            </div>
+
+            <div class="certificates-grid">
+                <!-- Tambahkan gambar sertifikat Anda di sini. Ganti src dengan link gambar -->
+                <div class="certificate-item reveal">
+                    <img src="https://placehold.co/600x450/1e293b/94a3b8?text=Sertifikat+1" alt="Sertifikat 1">
+                </div>
+                
+                <div class="certificate-item reveal">
+                    <img src="https://placehold.co/600x450/1e293b/94a3b8?text=Sertifikat+2" alt="Sertifikat 2">
+                </div>
+
+                <div class="certificate-item reveal">
+                    <img src="https://placehold.co/600x450/1e293b/94a3b8?text=Sertifikat+3" alt="Sertifikat 3">
+                </div>
+
+                <!-- Jika menambah sertifikat baru, copy div di atas dan letakkan di bawah ini -->
+                <!-- Contoh penambahan sertifikat ke-4 (memanjang ke bawah) -->
+                <!-- 
+                <div class="certificate-item reveal">
+                    <img src="link-gambar-sertifikat-4" alt="Sertifikat 4">
+                </div>
+                -->
             </div>
         </div>
     </section>
